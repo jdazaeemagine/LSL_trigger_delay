@@ -42,6 +42,11 @@ if __name__ == "__main__":
         
         
     directory = sys.argv[1]
+	
+	if not os.path.isdir(directory):
+	
+		print("ERROR: The directory "+ directory + "doesn't exists")
+		sys.exit()
 
     
     for i in range(1, 11): 
